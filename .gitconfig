@@ -1,0 +1,9 @@
+[user]
+	name = glenx-net
+	email = ian@glenx.net
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	required = true
+[color]
+	ui = true
