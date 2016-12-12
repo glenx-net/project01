@@ -1,0 +1,12 @@
+<svg
+   xmlns="http://www.w3.org/2000/svg"
+   width="60"
+   height="50"
+   version="1.1"
+   id="svg">
+  <path
+     d="M5 5 L 15 5 L 30 20 L 45 5 L 55 5 L 30 30 Z"
+	 id="arrow"
+     class="weirdPath"
+	 stroke="#573" stroke-width="2"  fill="#462"/>
+</svg>

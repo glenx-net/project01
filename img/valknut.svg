@@ -1,0 +1,12 @@
+<svg
+   xmlns="http://www.w3.org/2000/svg"
+   width="60"
+   height="50"
+   version="1.1"
+   id="svg">
+  <path
+     d="M15 5 L 45 5 L 22.5 44.0 L 7.5 18.0 L 52.5 18.0 L 37.5 44.0 Z"
+	 id="valknut"
+     class="weirdPath"
+	 stroke="#be5" stroke-width="8"  fill="none"/>
+</svg>
