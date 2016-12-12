@@ -104,6 +104,7 @@ a:active {
 }
 
 .secondary-content {
+  -webkit-columns: 250px 3;
 	padding-top: 80px;
 	padding-bottom: 70px;
   border-bottom: 2px solid #ab9;
