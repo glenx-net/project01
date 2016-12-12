@@ -1,15 +1,188 @@
-/*  ID TAGS */
 
 
+/* Base Styles -------------------- */
 
-/*  CLASSES */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  color: #132;
+  margin: 0;
+  font: 1em/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif;
+  background: linear-gradient(  0deg, white, rgba(50,75,25,0), rgba(50,75,25,1) );
+
+}
+
+h1 {  
+  font-size: 2.625rem; /* 90px/16px  */
+  color: rgba(255, 255, 255, 1);
+  text-transform: uppercase;
+  font-weight: normal;
+  line-height: 1.13; 
+  text-shadow: 3px 3px 6px #231; 
+}
+
+h2 {
+  font-size: 2.3125rem; /* 53px/16px  */
+  font-weight: normal;
+  line-height: 1.01;
+  margin: 0 0 .5em; /* 0 0 26px */
+}
+
+h3 {
+  font-size: 1.25em; /* 20px/16px  */
+  color: #462;
+  line-height: .922;
+  margin-bottom: 1.7em; /* 34px */
+}
+
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  list-style-type: none; 
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+/* Pseudo-classes ------------------ */
+
+a:link {
+  color: rgb(115, 199, 13);
+  text-decoration: none;
+}
+
+a:visited {
+  color: olive;
+}
+
+a:hover {
+  color: rgba(115, 199, 13, .4);
+}
+
+a:active {
+  color: green;
+}
+
+/*  Styles --------------------- */
+
+.container {
+	width: 90%;
+	margin: auto;
+}
+
+
+.title {
+  color: white;
+  font-size: 1.625rem; /* 26px/16px */
+  letter-spacing: 0.05em;
+  padding-bottom : 20px;
+  border-bottom : 1px solid white;
+  
+}
+
+.intro {
+  font-size: 1.25em; /* 20px/16px */
+  line-height: 1.6;  
+}
+
+.primary-content,
+.main-footer {
+  
+}
+
 .primary-content {
-
-
+  padding-top: 25px;
+  padding-bottom: 95px;
+  background: linear-gradient( #462, transparent 80%),
+             linear-gradient( 0deg, white, transparent 80%),
+    #462 url('../img/bg01.jpg') no-repeat center;
+  background-size: cover;
 }
+
 .secondary-content {
-
-	
+	padding-top: 80px;
+	padding-bottom: 70px;
+  border-bottom: 2px solid #ab9;
 }
 
-/*  MEDIA QUERIES */
+.callout {
+  font-size: 1.25em;
+  border-bottom: 3px solid;
+  padding: 0 9px 3px;
+  margin-top: 20px;
+  display: inline-block;
+}
+
+.main-footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  border-bottom: 10px solid #6b1;
+}
+
+.t-border {
+  border-top: 2px solid #ab9;
+}
+
+/* Layout Styles ------------------ */
+
+.primary-content, 
+.secondary-content {
+  width: 75%;
+  padding-left: 50px;
+  padding-right: 50px;
+  margin: auto;
+  max-width: 960px;
+}
+
+.wildlife {
+  color: white;
+  text-align: left;
+  padding: 18% 24%;
+  border-top: 10px solid #6b1;
+  margin: 105px 0 60px;
+  background: #462 url('../img/bear.jpg') no-repeat center;
+  background-size: cover;
+  box-shadow: 3px 5px 8px -2px #462 inset;
+  border-radius: 50px 15px;
+}
+
+.img-shadow {
+    filter: saturate(200%) drop-shadow(5px 5px 10px #CEA);
+	width : 80%;
+}
+
+.ball {
+	width : 40%;
+}
+
+.arrow {
+  width: 60px;
+  margin-top: 300px;
+}
+
+/* Floated Columns ------------------ */
+
+.resorts,
+.tips {
+  width: 46.5%;
+}
+
+.tips {
+  float: left;
+}
+
+.resorts {
+  float: right;
+}
+
+/* Float Clearfix ------------------ */
+
+.group:after {
+  content: "";
+  display: table;
+  clear: both;
+}
